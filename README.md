@@ -1,0 +1,1 @@
+# Inspired from https://github.com/bluwy/create-vite-extra
