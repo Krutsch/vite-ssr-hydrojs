@@ -1,1 +1,1 @@
-# Inspired from https://github.com/bluwy/create-vite-extra
+# Inspired by https://github.com/bluwy/create-vite-extra
