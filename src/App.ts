@@ -10,7 +10,7 @@ export default function App() {
 
     <h1>Hello Vite!</h1>
     <div class="card">
-      <button onclick="${() => count.set((val: typeof count) => val + 1)}">
+      <button onclick="${() => count((val: typeof count) => val + 1)}">
         count is ${count}
       </button>
     </div>
