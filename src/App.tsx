@@ -1,5 +1,5 @@
 import { reactive } from "hydro-js";
-
+import Text from "./Text";
 export default function App() {
   const count = reactive(0);
 
@@ -15,9 +15,8 @@ export default function App() {
           count is {count}
         </button>
       </div>
-      <p>
-        Edit <code>src/app.tsx</code> and save to test HMR
-      </p>
+      {/* If you prefer to not use JSX: */}
+      {Text()}
     </div>
   );
 }
