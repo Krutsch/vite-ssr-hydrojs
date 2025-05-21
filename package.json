@@ -20,7 +20,7 @@
     "@types/express": "^5.0.2",
     "@types/node": "^22.15.21",
     "cross-env": "^7.0.3",
-    "hydro-js-integrations": "^0.0.12",
+    "hydro-js-integrations": "^0.0.13",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
   }
