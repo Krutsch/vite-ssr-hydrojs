@@ -13,14 +13,14 @@
   "dependencies": {
     "compression": "^1.8.0",
     "express": "^5.1.0",
-    "hydro-js": "^1.8.3",
+    "hydro-js": "^1.8.4",
     "sirv": "^3.0.1"
   },
   "devDependencies": {
-    "@types/express": "^5.0.1",
-    "@types/node": "^22.15.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.21",
     "cross-env": "^7.0.3",
-    "hydro-js-integrations": "^0.0.3",
+    "hydro-js-integrations": "^0.0.10",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
   }

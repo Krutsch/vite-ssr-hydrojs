@@ -1,10 +1,16 @@
 import { readFile } from "node:fs/promises";
-import library from "hydro-js-integrations/server";
-const { render: renderToDOM, renderRootToString } = await library;
+import { renderRootToString, getLibrary } from "hydro-js-integrations/server";
+const { render: renderToDOM, html, $ } = await getLibrary();
+
+const htmlFile = await readFile("./index.html", "utf-8");
+renderToDOM(
+  html`${htmlFile.replace(/<!DOCTYPE html>/i, "")}`,
+  $("html")!,
+  false
+);
 
 const App = (await import("./App")).default; // Vite production buils fails, if it is not imported dynamically
-document.write(await readFile("./index.html", "utf-8"));
-renderToDOM(<App />, "#app", false);
+renderToDOM(<App />, $("#app")!, false);
 
 export async function render(_url: string) {
   const html = renderRootToString();
