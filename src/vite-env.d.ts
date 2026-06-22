@@ -17,7 +17,6 @@ type CastToCustomAttributes<T> = {
 
 export declare global {
   namespace JSX {
-    interface IntrinsicElements
-      extends CastToCustomAttributes<HTMLElementTagNameMap> {}
+    interface IntrinsicElements extends CastToCustomAttributes<HTMLElementTagNameMap> {}
   }
 }
